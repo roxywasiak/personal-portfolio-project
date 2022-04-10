@@ -1,1 +1,63 @@
+:root {
+  --charcoal: #424b54ff;
+  --pewter-blue: #93a8acff;
+  --white: #ffffffff;
+  --cameo-pink: #e2b4bdff;
+  --copper-rose: #9b6a6cff;
+}
 
+.header {
+  border: solid 1px red;
+}
+
+.nav-container {
+  border: solid 1px red;
+}
+
+.links {
+  border: solid 1px red;
+}
+
+.main-container {
+  border: solid 1px red;
+}
+
+#About- Me {
+  border: solid 1px red;
+}
+
+#Projects {
+  border: solid 1px red;
+}
+
+#Contact {
+  border: solid 1px red;
+}
+
+.mainproject {
+  border: solid 1px red;
+}
+
+.project {
+  border: solid 1px red;
+}
+
+.flex-items {
+  border: solid 1px red;
+}
+
+.project-h {
+  border: solid 1px red;
+}
+
+#Contact {
+  border: solid 1px red;
+}
+
+.icons {
+  border: solid 1px red;
+}
+
+.footer {
+  border: solid 1px red;
+}
