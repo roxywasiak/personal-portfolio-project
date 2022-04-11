@@ -8,52 +8,93 @@
   --copper-rose: #9b6a6cff;
 }
 
+*color {
+  color: var(--charcoal);
+}
+
 .header {
-  border: solid 1px red;
   margin: 20px auto;
 }
 /*contains the main nav links*/
 .nav-container {
-  border: solid 1px red;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: var(--cameo-pink);
+  border: double;
 }
 
 /* these are the clickable links which point to the id of the page*/
 .links {
-  border: solid 1px red;
   display: flex;
   flex-direction: row;
   margin: 10px;
   padding: 20px;
   font-size: 20px;
   align-items: center;
+  color: var(--charcoal);
+  text-decoration: underline;
 }
+
 /* this is the container which holds everything from the header down right to the footer */
+
+/* 
 .main-container {
   border: solid 1px red;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+} 
+*/
+
+.projects-h h3 {
+  font-size: large;
+  font-family: "Barlow", sans-serif;
+  background-color: var(--charcoal);
+  opacity: 0.7;
+}
+
+.Projects,
+img {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  border;solid var(white);
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background-color: var(--pewter-blue);
+  box-sizing: border-box;
+}
+
+#cards img {
+  width: 500px;
+  height: 375px;
+  margin: 10px;
+  border: solid var(--white) 3px;
 }
 
 /* section id about with image and text */
 #About-me {
-  border: solid 1px red;
-  padding-right: 20px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding: 20px;
 }
 
 .myphoto {
   display: block;
-  margin-right: auto;
+  padding: 20px;
   width: 500px;
+  border: solid var(--copper-rose) 3px;
 }
-#About-me,
+
+div #About-me,
 p,
 h3 {
   display: flex;
@@ -62,55 +103,78 @@ h3 {
 }
 
 #About-me,
+ul,
 li,
 h1,
 h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 4px;
+}
+
+/* the items in the skills which are li items */
+
+ul,
+li {
+  text-decoration: underline;
+  padding: 5px;
 }
 
 /* the first project card which will be different from the 6 others*/
-#Projects {
-  border: solid 1px red;
+
+#Projects img {
   object-fit: cover;
   width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-/* the contact section which has the icons which are clickable links*/
-#Contact {
-  border: solid 1px red;
-}
-/* the link which has the mian first project*/
-.main-project {
-  border: solid 1px red;
+  width: 100%;
+  height: auto;
 }
 
-/* the rest of the other projects which all have the same placeholder */
-.project {
-  border: solid 1px red;
+#Projects h2 p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
-/* the other projects which all contain the clickable link */
-.flex-items {
-  border: solid 1px red;
-}
+
 /* the header for each individual project to display its name */
-.project-h {
-  border: solid 1px red;
+.project-h,
+h3,
+p {
+  font-size: large;
+  background-color: var(--pewter-blue);
 }
 
 /* contact details which contains the font awesome links */
 #Contact {
-  border: solid 1px red;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--pewter-blue);
+  border: double;
 }
 
-/* to control each of the icons */
-.icon {
+.icon a {
   border: solid 1px red;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  justify-content: center;
+  padding: 20px;
 }
+
 /* the footer with authors details */
 .footer {
-  border: solid 1px red;
+  background-color: var(--cameo-pink);
+  text-align: center;
+  text-decoration: underline;
+  padding: 10px;
+  color: var(--charcoal);
 }
