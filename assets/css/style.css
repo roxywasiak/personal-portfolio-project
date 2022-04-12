@@ -8,13 +8,16 @@
   --copper-rose: #9b6a6cff;
 }
 
-*color {
+/* the main font-family and colour of text on entire page*/
+* color {
   color: var(--charcoal);
+  font-family: "Barlow", sans-serif;
 }
 
-.header {
-  margin: 20px auto;
+body {
+  margin: 5px;
 }
+
 /*contains the main nav links*/
 .nav-container {
   display: flex;
@@ -35,18 +38,6 @@
   color: var(--charcoal);
   text-decoration: underline;
 }
-
-/* this is the container which holds everything from the header down right to the footer */
-
-/* 
-.main-container {
-  border: solid 1px red;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} 
-*/
 
 .projects-h h3 {
   font-size: large;
@@ -98,6 +89,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-size: 30px;
 }
 
 #About-me,
@@ -167,6 +159,12 @@ p {
   padding: 20px;
 }
 
+.fa-github-alt,
+.fa-linkedin,
+.fa-envelope {
+  color: var(--cameo-pink);
+}
+
 /* the footer with authors details */
 .footer {
   background-color: var(--cameo-pink);
@@ -174,9 +172,10 @@ p {
   text-decoration: underline;
   padding: 10px;
   color: var(--charcoal);
+  border-style: double;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   #About-me,
   #cards,
   #Contact {
