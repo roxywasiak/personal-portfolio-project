@@ -91,7 +91,7 @@ img {
   display: block;
   padding: 20px;
   width: 500px;
-  border: solid var(--copper-rose) 3px;
+
 }
 
 div #About-me,
@@ -159,8 +159,8 @@ p {
   border: double;
 }
 
-.icon a {
-  border: solid 1px red;
+.icon {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin: 10px;
