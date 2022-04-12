@@ -20,6 +20,7 @@ Below are the responsive versions of the portfolio which are mobile and desktop
 # Desktop Version
 
 Desktop
+![desktop-version](./assets/images/screenshots/desktopscreenshot.png)
 
 # Mobile Version
 
