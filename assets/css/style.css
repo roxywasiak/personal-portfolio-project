@@ -114,7 +114,7 @@ li {
 /* the first project card which will be different from the 6 others*/
 
 #Projects img {
-  object-fit: cover;
+  object-fit: 90%;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -159,10 +159,25 @@ p {
   padding: 20px;
 }
 
+/* my little icons which open up in separate page*/
+
 .fa-github-alt,
 .fa-linkedin,
 .fa-envelope {
   color: var(--cameo-pink);
+}
+
+.fa-envelope:hover,
+.fa-github-alt:hover,
+.fa-linkedin:hover {
+  color: var(--charcoal);
+}
+
+.fa-envelope:hover,
+.fa-github-alt:hover,
+.fa-linkedin:hover {
+  font-size: 4em;
+  transition: 1s ease-out;
 }
 
 /* the footer with authors details */
@@ -175,7 +190,7 @@ p {
   border-style: double;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
   #About-me,
   #cards,
   #Contact {
