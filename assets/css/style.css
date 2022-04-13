@@ -64,16 +64,8 @@ img {
   flex: 1;
   padding: 20px;
 }
-/* project cards *
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  box-sizing: border-box;
-  background-color: var(--pewter-blue);
-}
 
-/* section id about with image and text */
+/* section id text */
 #About-me {
   display: flex;
   flex-direction: row;
@@ -99,6 +91,9 @@ h3 {
 .bio {
   font-size: 20px;
   flex: 2;
+  padding: 5px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 #About-me,
@@ -178,24 +173,6 @@ li {
   align-items: center;
 }
 
-/* the other projects images 
-.wrapper .newcard img {
-  display: inline;
-  flex-direction: row;
-  align-items: center;
-}
- .wrapper. newcard img {
-  display: flex;
-  flex-flow: column wrap;
-  height: 250px;
-}
-
-
-/* display: inline;
-  flex-direction: row;
-  align-items: center;
-}*/
-
 /* the title "My Projects" above the gallery */
 #my-projects {
   font-size: 70px;
@@ -219,7 +196,8 @@ li {
 h3,
 p {
   font-size: large;
-  background-color: var(--pewter-blue);
+  /*
+  background-color: var(--pewter-blue);*/
 }
 
 /* contact details which contains the font awesome links */
