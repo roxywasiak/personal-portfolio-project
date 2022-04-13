@@ -68,14 +68,6 @@ img {
   background-color: var(--pewter-blue);
 }
 
-/* images in cards */
-.wrapper img {
-  width: 500px;
-  height: 375px;
-  margin: 10px;
-  border: solid var(--white) 3px;
-}
-
 /* section id about with image and text */
 #About-me {
   display: flex;
@@ -99,6 +91,10 @@ h3 {
   font-size: 30px;
 }
 
+.bio {
+  font-size: 30px;
+}
+
 #About-me,
 ul,
 li,
@@ -111,7 +107,6 @@ h2 {
 }
 
 /* the items in the skills which are li items */
-
 ul,
 li {
   text-decoration: underline;
@@ -139,7 +134,19 @@ li {
   height: auto;
 }
 
-.newcard {
+/* images in cards */
+.wrapper img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 375px;
+  margin: 20px;
+  border: solid var(--charcoal) 3px;
+}
+
+.new-card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -147,12 +154,12 @@ li {
   margin: 2rem;
 }
 
-.newcard img {
+.new-card img {
   width: 500px;
   height: 500px;
   box-sizing: border-box;
-  background-color: var(--pewter-blue);
-  border: solid var(--white) 3px;
+  /*background-color: var(--pewter-blue);*/
+  border: solid var(--charcoal) 3px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -269,15 +276,16 @@ p {
     align-items: center;
   }
 
-  .header,
-  .nav-container,
+  .header .nav-container,
   .main-container,
   .projects,
   .wrapper,
-  .newcard,
+  .new-card,
   .project-h,
   .footer,
-  .links {
+  .links,
+  .bio,
+  .list {
     flex-direction: column;
     align-items: center;
   }
