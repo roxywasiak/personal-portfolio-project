@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- font awesome  -->
     <link
       rel="stylesheet"
@@ -23,7 +23,8 @@
       rel="stylesheet"
     />
     <!-- my stylesheet -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+     
+     <link rel="stylesheet" href="./assets/css/style.css" /> 
 
     <title>Personal Portfolio Page</title>
   </head>
@@ -50,7 +51,7 @@
           />
         </div>
 
-        <div>
+        <div class="bio">
           <h1>About Me</h1>
           <p>
             I am Rukhsana Wasiak software developer based in Birmingham. I
@@ -70,7 +71,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus commodi modi ratione et molestiae ipsa beatae, quidem quia sapiente, incidunt suscipit tenetur obcaecati sit nobis sunt excepturi, sequi pariatur vitae.
           </p>
           <h2>My Skills</h2>
-          <ul>
+          <ul class="list">
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
@@ -119,44 +120,45 @@
       <!-- these divs are flex items -->
 
       <!-- project 2 portfolio--->
-      <section id="cards">
-        <div class="project">
-           <div class="flex-item"> 
+        <div class="wrapper">
+           <div class="newcard"> 
             <a href="https://github.com/roxywasiak/personal-portfolio-project/tree/dev"  target="-blank" >
             <img
               src="./assets/images/portfolio.jpeg"
               alt="image of portfolio of projects"
             /></a>
           </div>
+        </div>
 
           <div class="project-h">
             <h3>Personal Portfolio Website</h3>
             <p>
               A personal portfolio website to display my skills and interests
             </p>
-          </div>
+        
         </div>
 
         <!-- project 3  password generator-->
         
-        <div class="project">
-          <div class="flex-item"> 
+        <div class="wrapper">
+           <div class="newcard">  
             <a href="" target="-blank">
             <img
               src="/assets/images/passwordgen.jpeg"
               alt="image of padlock for password generator"
             /></a>
           </div>
+        </div>
 
           <div class="project-h">
             <h3>Random Password Generator</h3>
             <p>A random password generator using JavaScript</p>
-          </div>
+        
         </div>
 
         <!-- project 4  code quiz -->
-        <div class="project">
-           <div class="flex-item"> 
+        <div class="wrapper">
+           <div class="newcard"> 
             <a href="" target="-blank">
             <img
               src="./assets/images/codequiz.jpeg"
@@ -171,9 +173,9 @@
         </div>
 
         <!-- project 5 day planner-->
-        <div class="project">
+        <div class="wrapper">
           <!-- could potentially get rid of this div and place flex items into href class -->
-           <div class="flex-item"> 
+           <div class="newcard"> 
             <a href="" target="-blank">
             <img
               src="./assets/images/dayplanner.jpeg"
@@ -188,8 +190,8 @@
         </div>
 
         <!-- project 6 weather dashboard-->
-        <div class="project">
-          <div class="flex-item"> 
+        <div class="wrapper">
+          <div class="newcard"> 
             <a href="" target="-blank">
             <img
               src="./assets/images/weatherdash.jpeg"
@@ -207,8 +209,8 @@
         </div>
 
         <!-- project 7 group project 1-->
-        <div class="project">
-           <div class="flex-item"> 
+        <div class="wrapper">
+           <div class="newcard"> 
             <a href="" target="-blank">
             <img
               src="./assets/images/groupproject.jpeg"
