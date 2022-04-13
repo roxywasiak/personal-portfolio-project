@@ -15,7 +15,7 @@
 }
 
 body {
-  margin: 5px;
+  margin: 0px;
 }
 
 /*contains the main nav links*/
@@ -59,6 +59,11 @@ img {
   align-items: center;
   border: #424b54ff, var(white);
 }
+
+.profile-image {
+  flex: 1;
+  padding: 20px;
+}
 /* project cards *
 .wrapper {
   display: flex;
@@ -77,9 +82,9 @@ img {
 }
 
 .myphoto {
-  display: block;
-  padding: 20px;
-  width: 500px;
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
 }
 
 div #About-me,
@@ -92,7 +97,8 @@ h3 {
 }
 
 .bio {
-  font-size: 30px;
+  font-size: 20px;
+  flex: 2;
 }
 
 #About-me,
@@ -123,6 +129,13 @@ li {
   align-items: center;
   width: 100%;
   height: auto;
+}
+
+.all-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* the main image of first projects paragraph */
@@ -237,6 +250,10 @@ p {
   padding: 20px;
 }
 
+.icon a {
+  text-decoration: none;
+}
+
 /* my little icons which open up in separate page added some styling to them*/
 
 .fa-github-alt,
@@ -285,7 +302,8 @@ p {
   .footer,
   .links,
   .bio,
-  .list {
+  .list,
+  .myphoto {
     flex-direction: column;
     align-items: center;
   }
