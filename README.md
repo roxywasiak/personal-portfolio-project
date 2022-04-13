@@ -1,4 +1,4 @@
-# title
+# Title
 
 # personal-portfolio-project
 
@@ -7,7 +7,7 @@
 A personal portfolio showcasing my web development work.
 For this portfolio I have used HTML and CSS to create and style my page.
 I have created links on the page which direct the user to my GitHub page showcasing the project.
-I have also added links which take you directly to my Github, LinkdIn Profile and Email if you would like to contact me.
+I have also added links which take you directly to my Github, LinkedIn Profile and Email if you would like to contact me.
 
 # Links to URL
 
@@ -17,6 +17,8 @@ Below are the responsive versions of the portfolio which are mobile and desktop
 
 # Desktop Version
 
-![desktop-version](./assets/images/screenshots/desktopscreenshot.png)
+![desktop-version]()
 
 # Mobile Version
+
+![mobile-version]()

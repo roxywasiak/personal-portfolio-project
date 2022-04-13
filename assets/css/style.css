@@ -33,10 +33,16 @@ body {
   flex-direction: row;
   margin: 10px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 30px;
   align-items: center;
   color: var(--charcoal);
   text-decoration: underline;
+}
+
+.links:hover {
+  color: var(--white);
+  font-size: 3em;
+  transition: 1s ease;
 }
 
 .projects-h h3 {
@@ -112,8 +118,8 @@ li {
 }
 
 /* the first project card which will be different from the 6 others*/
-
-#Projects img {
+/* the large image of first project */
+.projects img {
   object-fit: 90%;
   width: fit-content;
   display: flex;
@@ -123,12 +129,38 @@ li {
   height: auto;
 }
 
-#Projects h2 p {
+/* the main image of first projects paragraph */
+.projects p {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: auto;
+}
+
+/* the other projects images */
+#cards .project img {
+  display: inline;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* the title "My Projects" above the gallery */
+#my-projects {
+  font-size: 70px;
+  text-decoration: underline;
+  color: var(--charcoal);
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--cameo-pink);
+  border-style: double;
+  padding: 20px;
+}
+
+#my-projects:hover {
+  color: var(--white);
+  font-size: 6em;
+  transition: 00.5s ease-in;
 }
 
 /* the header for each individual project to display its name */
@@ -149,8 +181,16 @@ p {
   border: double;
 }
 
+/* turns the contact white and makes it bigger */
+#Contact:hover {
+  color: var(--white);
+  font-size: 2em;
+  transition: 0.5s ease-out;
+}
+
+/* made my icons side by side and center */
 .icon {
-  display: flex;
+  display: inline;
   flex-direction: row;
   margin: 10px;
   padding: 20px;
@@ -159,7 +199,7 @@ p {
   padding: 20px;
 }
 
-/* my little icons which open up in separate page*/
+/* my little icons which open up in separate page added some styling to them*/
 
 .fa-github-alt,
 .fa-linkedin,
@@ -184,16 +224,17 @@ p {
 .footer {
   background-color: var(--cameo-pink);
   text-align: center;
-  text-decoration: underline;
   padding: 10px;
   color: var(--charcoal);
   border-style: double;
 }
 
+/* media queries */
 @media screen and (max-width: 576px) {
   #About-me,
   #cards,
-  #Contact {
+  #Contact,
+  #my-projects {
     flex-direction: column;
     align-items: center;
   }
@@ -201,10 +242,11 @@ p {
   .header,
   .nav-container,
   .main-container,
-  .Projects,
+  .projects,
   .project,
   .project-h,
-  .footer .links {
+  .footer,
+  .links {
     flex-direction: column;
     align-items: center;
   }
