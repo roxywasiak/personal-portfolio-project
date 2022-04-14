@@ -11,6 +11,10 @@ I have also added links which take you directly to my Github, LinkedIn Profile a
 
 # Links to URL
 
+click the link to view the website
+
+[here] (https://roxywasiak.github.io/personal-portfolio-project/)
+
 # Responsive versions
 
 Below are the responsive versions of the portfolio which are mobile and desktop
@@ -21,4 +25,4 @@ Below are the responsive versions of the portfolio which are mobile and desktop
 
 # Mobile Version
 
-![mobile-version]()
+![mobile-version](./assets/images/screenshots/mobilescreenshot.png)
