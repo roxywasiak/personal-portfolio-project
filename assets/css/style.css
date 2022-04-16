@@ -151,7 +151,7 @@ li {
   width: 500px;
   height: 375px;
   margin: 20px;
-  border: solid var(--charcoal) 3px;
+  border: solid var(--charcoal) 3px;*/
 }
 
 .new-card {
@@ -278,7 +278,7 @@ p {
   .projects,
   .wrapper,
   .new-card,
-  .img .project-h,
+  .project-h,
   .footer,
   .links,
   .bio,
