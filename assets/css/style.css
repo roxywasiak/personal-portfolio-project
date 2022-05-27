@@ -172,6 +172,22 @@ li {
   align-items: center;
 }
 
+/* larger image of project */
+.outerDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+
+}
+
+.firstProject h3 p {
+  text-align: center;
+  
+}
+
+
 /* the title "My Projects" above the gallery */
 #my-projects {
   font-size: 70px;
