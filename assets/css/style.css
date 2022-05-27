@@ -8,10 +8,11 @@
   --copper-rose: #9b6a6cff;
 }
 
+
 /* the main font-family and color of text on entire page*/
 * color {
   color: var(--charcoal);
-  font-family: "Barlow", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -254,19 +255,22 @@ p {
 
 .fa-github-alt,
 .fa-linkedin,
-.fa-envelope {
+.fa-envelope,
+.fa-file {
   color: var(--cameo-pink);
 }
 
 .fa-envelope:hover,
 .fa-github-alt:hover,
-.fa-linkedin:hover {
+.fa-linkedin:hover,
+.fa-file:hover {
   color: var(--charcoal);
 }
 
 .fa-envelope:hover,
 .fa-github-alt:hover,
-.fa-linkedin:hover {
+.fa-linkedin:hover,
+.fa-file:hover {
   font-size: 4em;
   transition: 1s ease-out;
 }
