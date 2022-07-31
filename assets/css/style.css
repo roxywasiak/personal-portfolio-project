@@ -1,3 +1,5 @@
+/*imported the colors ready to use the color theme with variable -name and variable-value*/
+
 :root {
   --charcoal: #424b54ff;
   --pewter-blue: #93a8acff;
@@ -6,58 +8,290 @@
   --copper-rose: #9b6a6cff;
 }
 
-.header {
-  border: solid 1px red;
+/* the main font-family and color of text on entire page*/
+* color {
+  color: var(--charcoal);
+  font-family: "Roboto", sans-serif;
 }
 
+body {
+  margin: 0px;
+}
+
+/*contains the main nav links*/
 .nav-container {
-  border: solid 1px red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--cameo-pink);
+  border: double;
 }
 
+/* these are the clickable links which point to the id of the page*/
 .links {
-  border: solid 1px red;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  align-items: center;
+  color: var(--charcoal);
+  text-decoration: underline;
 }
 
-.main-container {
-  border: solid 1px red;
+.links:hover {
+  color: var(--white);
+  font-size: 3em;
+  transition: 1s ease;
 }
 
-#About- Me {
-  border: solid 1px red;
+.projects-h h3 {
+  font-size: large;
+  font-family: "Barlow", sans-serif;
+  background-color: var(--charcoal);
+  opacity: 0.7;
+}
+/* my photo */
+.Projects,
+img {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  border: #424b54ff, var(white);
 }
 
-#Projects {
-  border: solid 1px red;
+.profile-image {
+  flex: 1;
+  padding: 20px;
 }
 
+/* section id text */
+#About-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.my-photo {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+.bio {
+  font-size: 20px;
+  flex: 2;
+  padding: 5px;
+  text-align: justify;
+}
+
+#About-me,
+ul,
+li,
+h1,
+h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4px;
+}
+
+/* the items in the skills which are li items */
+ul,
+li {
+  text-decoration: underline;
+  padding: 5px;
+}
+
+/* the first project card which will be different from the 6 others*/
+/* the large image of first project */
+.projects img {
+  object-fit: 90%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.all-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* the main image of first projects paragraph */
+.projects p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+/* images in cards */
+.wrapper img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 375px;
+  margin: 20px;
+  border: solid var(--charcoal) 3px;
+}
+
+.new-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.new-card img {
+  width: 500px;
+  height: 500px;
+  box-sizing: border-box;
+  border: solid var(--charcoal) 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* larger image of project */
+.outerDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.firstProject h3 p {
+  text-align: center;
+}
+
+/* the title "My Projects" above the gallery */
+#my-projects {
+  font-size: 70px;
+  text-decoration: underline;
+  color: var(--charcoal);
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--cameo-pink);
+  border-style: double;
+  padding: 20px;
+}
+
+#my-projects:hover {
+  color: var(--white);
+  font-size: 6em;
+  transition: 00.5s ease-in;
+}
+
+/* the header for each individual project to display its name */
+.project-h,
+h3,
+p {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+/* contact details which contains the font awesome links */
 #Contact {
-  border: solid 1px red;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--pewter-blue);
+  border: double;
 }
 
-.mainproject {
-  border: solid 1px red;
+/* turns the contact white and makes it bigger */
+#Contact:hover {
+  color: var(--white);
+  font-size: 2em;
+  transition: 0.5s ease-out;
 }
 
-.project {
-  border: solid 1px red;
+/* made my icons side by side and center */
+.icon {
+  display: inline;
+  flex-direction: row;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
-.flex-items {
-  border: solid 1px red;
+.icon a {
+  text-decoration: none;
 }
 
-.project-h {
-  border: solid 1px red;
+/* my little icons which open up in separate page added some styling to them*/
+
+.fa-github-alt,
+.fa-linkedin,
+.fa-envelope,
+.fa-file {
+  color: var(--cameo-pink);
 }
 
-#Contact {
-  border: solid 1px red;
+.fa-envelope:hover,
+.fa-github-alt:hover,
+.fa-linkedin:hover,
+.fa-file:hover {
+  color: var(--charcoal);
 }
 
-.icons {
-  border: solid 1px red;
+.fa-envelope:hover,
+.fa-github-alt:hover,
+.fa-linkedin:hover,
+.fa-file:hover {
+  font-size: 4em;
+  transition: 1s ease-out;
 }
 
+/* the footer with authors details */
 .footer {
-  border: solid 1px red;
+  background-color: var(--cameo-pink);
+  text-align: center;
+  padding: 10px;
+  color: var(--charcoal);
+  border-style: double;
+}
+
+/* media queries */
+@media screen and (max-width: 576px) {
+  #About-me,
+  #Contact,
+  #my-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header,
+  .nav-container,
+  .projects,
+  .wrapper,
+  .new-card,
+  .project-h,
+  .footer,
+  .links,
+  .bio,
+  .list,
+  .profile-image,
+  .my-photo {
+    flex-direction: column;
+    align-items: center;
+  }
 }

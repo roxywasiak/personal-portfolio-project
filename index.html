@@ -3,12 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- font awesome  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- some fonts from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+      </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=PT+Serif&family=Source+Serif+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- my stylesheet -->
+     
+     <link rel="stylesheet" href="./assets/css/style.css" /> 
+
     <title>Personal Portfolio Page</title>
   </head>
   <body>
@@ -16,200 +36,232 @@
       <!--------Nav Bar which is a flex container------>
       <nav class="nav-container">
         <!--------Three divs with anchor id these are the flex items----->
-        <div><a href="#About-Me" class="links">About Me</a></div>
-        <div><a href="#Projects" class="links">My Projects</a></div>
-        <div><a href="#Contact" class="links">Connect With Me</a></div>
+        <div><a href="#About-me" class="links">About Me</a></div>
+        <div><a href="#my-projects" class="links">My Projects</a></div>
+        <div><a href="#Contact" class="links">Contact Me</a></div>
       </nav>
     </header>
     <!----Sections like about me with id tags------>
-    <main class="main-container">
+    <main>
       <!----three of the sections ---->
       <!----section 1 needs to tell about myself-->
-      <section id="About-Me">
-        <div>
-          <img src="./assets/images/1613837040274.jpeg" />
+      <section id="About-me">
+        <div class="profile-image">
+          <img
+            src="./assets/images/rukhsana.jpg"
+            alt="image of a lady standing"
+            class="my-photo"
+          />
         </div>
-        <div>
+
+        <div class="bio">
           <h1>About Me</h1>
           <p>
-            I am Rukhsana a software developer based in Birmingham, coming from
-            a strong client facing background within the retail and property
-            sector I have made the jump to software and am really enjoying this
-            journey and am excited for the future of code. I currently work for
-            one of the largest Software providers in the UK where our solutions
-            improve the lives of millions of people every day. In my spare time
-            I love eating and sharing my marvelous food creations and going to
-            the gym to so I can eat more of them!
+            I am Rukhsana Wasiak software developer based in Birmingham. I
+            come from a strong client facing background within the retail and
+            property sector and have made the jump to software through studying at
+             The University Of Birmingham Coding Bootcamp. I am really
+            enjoying this journey and I am excited for the future of code. I
+            currently work for one of the largest Software providers in the UK
+            where our solutions improve the lives of millions of people every
+            day. In my spare time I love eating and sharing my marvelous food
+            creations and going to the gym to so I can eat more of them!
+
+           
           </p>
           <h2>My Skills</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="list">
+            <li a href="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=White">HTML</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>Bootstrap</li>
+            <li>Express.js</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Database Theory</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Git</li>
+            <li>API's</li>
           </ul>
         </div>
       </section>
 
       <!---section 2 my projects which will contain the larger card image-->
-      <section id="Projects">
-        <h2>My Projects</h2>
+      <section class="projects">
+        <h2 id="my-projects">My Projects</h2>
         <!----first larger image of the project horiseon---->
-        <div>
-          <div>
-            <!-- will need a href anchor tag & image of first project -->
+        <div class="outerDiv">
+           <!-- will need a href anchor tag & image of first project -->
             <div>
-              <a href="" class="mainproject"></a>
+              <a href="" target="-blank"><class="main-project">
               <img
-                src="./assets/images/marketing.jpeg"
-                alt="image of marketing materials"
-              />
-            </div>
-
-            <div>
-              <h3></h3>
-              <!-- will need link to website via github pages -->
-              <div><a href="" class=""></a></div>
+                src="./assets/images/screenshotsnew/buddyup.png"
+                alt="image of students chatting "
+              /></a>
             </div>
           </div>
+        <div class="firstProject">
+          <h3>Buddy-Up</h3>
+          <p>
+           A full stack web application where a user can search for a buddy or tutor for study support in various subjects. The user can create a profile and advert. They can be matched to a suitable Buddy or Tutor who will respond to their advert and be matched up via a session. Messaging is available in order for the pair to communicate.
+          <a href="https://github.com/roxywasiak/marketing-agency-website/tree/dev" target="blank">Click for code</a></p>
         </div>
+      
 
-        <!-- rest of the projects  -->
-        <!-- these divs are flex items -->
+      <!-- rest of the projects  -->
+      <!-- these divs are flex items -->
+<div class="all-projects">
+      <!-- project 2 portfolio--->
+   
+        <div class="wrapper">
+          <div class="new-card"> 
+           <a href="https://talexandru1987.github.io/group-4-project-1/" target="-blank">
+           <img
+             src="./assets/images/screenshotsnew/homepage.png"
+             alt="image ofa movie application"
+          ></a>
+         </div>
 
-        <!-- project 2 portfolio--->
-        <div class="project">
-          <div class="flex-item">
-            <a href="" class=""></a>
-            <img
-              src="./assets/images/portfolio.jpeg"
-              alt="image of portfolio of projects"
-            />
-          </div>
-
-          <div class="project-h">
-            <h3></h3>
-            <p></p>
-          </div>
-        </div>
+         <div class="project-h">
+           <h3>Group Project 1</h3>
+           <p>
+             A group project showcasing various technologies
+           </p>
+           <a href="https://github.com/talexandru1987/group-4-project-1" target="blank">Click for code</a>
+         </div>
+       </div>
 
         <!-- project 3  password generator-->
-        <div class="project">
-          <div class="flex-items">
-            <a href="" class=""></a>
+        
+        <div class="wrapper">
+           <div class="new-card">  
+            <a href="https://roxywasiak.github.io/password-generator/" target="-blank">
             <img
-              src="/assets/images/passwordgen.jpeg"
-              alt="image of padlock for password generator"
-            />
+              src="./assets/images/screenshotsnew/passwordgen.png"
+              alt="image of a password generator"
+            /></a>
           </div>
-
           <div class="project-h">
-            <h3></h3>
-            <p></p>
-          </div>
+            <h3>Random Password Generator</h3>
+            <p>A random password generator using JavaScript</p>
+            <a href="https://github.com/roxywasiak/password-generator/tree/dev" target="blank">Click for code</a>
         </div>
+      </div>
 
         <!-- project 4  code quiz -->
-        <div class="project">
-          <div class="flex-items">
-            <a href="" class=""></a>
+        <div class="wrapper">
+           <div class="new-card"> 
+            <a href="https://roxywasiak.github.io/code-quiz/" target="-blank">
             <img
-              src="./assets/images/codequiz.jpeg"
-              alt="image of icons showing quiz like scenario"
-            />
+              src="./assets/images/screenshotsnew/quizstart.png"
+              alt="image of a code quiz"
+           ></a>
           </div>
 
           <div class="project-h">
-            <h3></h3>
-            <p></p>
+            <h3>A Code Quiz Application</h3>
+            <p>A code quiz using various technologies</p>
+            <a href="https://github.com/roxywasiak/code-quiz/tree/dev" target="blank">Click for code</a>
           </div>
         </div>
 
         <!-- project 5 day planner-->
-        <div class="project">
-          <div class="flex-items">
-            <a href="" class=""></a>
+        <div class="wrapper">
+          <!-- could potentially get rid of this div and place flex items into href class -->
+           <div class="new-card"> 
+            <a href="https://roxywasiak.github.io/work-day-scheduler/" target="-blank">
             <img
-              src="./assets/images/dayplanner.jpeg"
-              alt="image of a diary with planning"
-            />
+              src="./assets/images/screenshotsnew/workdaysched.png"
+              alt="image of a day planner"
+             ></a>
           </div>
 
           <div class="project-h">
-            <h3></h3>
-            <p></p>
+            <h3>Day planner Application</h3>
+            <p>An application to help plan your day ahead</p>
+            <a href="https://github.com/roxywasiak/work-day-scheduler/tree/dev" target="blank">Click for code</a>
           </div>
         </div>
 
         <!-- project 6 weather dashboard-->
-        <div class="project">
-          <div class="flex-items">
-            <a href="" class=""></a>
+        <div class="wrapper">
+          <div class="new-card"> 
+            <a href="https://roxywasiak.github.io/weather-dashboard/" target="-blank">
             <img
-              src="./assets/images/weatherdash.jpeg"
+              src="./assets/images/screenshotsnew/startweather.png"
               alt="weather dashboard image"
-            />
+             ></a>
           </div>
 
           <div class="project-h">
-            <h3></h3>
-            <p></p>
+            <h3>A weather Dashboard</h3>
+            <p>
+              A weather dashboard for a summary of weather
+            </p>
+            <a href="https://github.com/roxywasiak/weather-dashboard/tree/dev" target="blank">Click for code</a>
           </div>
         </div>
 
-        <!-- project 7 group project 1-->
-        <div class="project">
-          <div class="flex-items">
-            <a href="" class=""></a>
-            <img
-              src="./assets/images/groupproject.jpeg"
-              alt="image of people in a group working on a project"
-            />
-          </div>
+         <!-- week 1 -->
+         <div class="wrapper">
+          <div class="new-card"> 
+           <a href="https://roxywasiak.github.io/marketing-agency-website" target="-blank">
+           <img
+             src="./assets/images/screenshotsnew/marketingproject.png"
+             alt="image of marketing materials"
+          ></a>
+         </div>
 
-          <div class="project-h">
-            <h3></h3>
-            <p></p>
-          </div>
-        </div>
+         <div class="project-h">
+           <h3>Marketing Agency Website</h3>
+           <p>
+            A static marketing agency website project made using HTML and
+            CSS
+           </p>
+           <a href="https://github.com/roxywasiak/marketing-agency-website/tree/dev" target="blank">Click for code</a>
+         </div>
+       </div>
+
+       
+      
+      </div>
       </section>
-
       <!---------section 3 will contain my icons and contact details------>
       <section id="Contact">
-        <h2>Connect With Me</h2>
+        <h2>Connect</h2>
         <!-- flex container -->
         <!-- the font awesome icons are these links -->
-        <div>
-          <div>
-            <a href="https://github.com/roxywasiak" class="icon">
-              <i class="fa-brands fa-github-alt"></i>
+        <div class="icon">
+         <a href="https://github.com/roxywasiak" target="-blank">
+              <i class="fa-brands fa-github-alt fa-2x"></i>
             </a>
-            <img src="" alt="" />
-          </div>
-
-          <div>
-            <a
-              href="https://www.linkedin.com/in/rukhsana-wasiak-43561a94/"
-              class="icon"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <img src="" alt="" />
-          </div>
-
-          <div>
-            <a href="mailto:ruksclone@hotmail.com" class="icon">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <img src="" alt="" />
-          </div>
         </div>
-      </section>
+
+          <div class="icon">
+             <a href="https://www.linkedin.com/in/rukhsana-wasiak-43561a94/" target="-blank">
+             <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="icon">
+           <a href="mailto:ruksclone@hotmail.com"  target="-blank">
+              <i class="fa-solid fa-envelope fa-2x"></i>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="./assets/images/screenshotsnew/rukhsana.pdf"  target="-blank" download>
+               <i class="fa-solid fa-file fa-2x"></i>
+             </a>
+           </div>
+           
+       </section>
       <!-- end of the sections all -->
     </main>
 
     <footer class="footer">
-      <h4></h4>
-      <p></p>
+      <h4>Coded with ♡ by Rukhsana Wasiak</h4>
     </footer>
   </body>
 </html>
