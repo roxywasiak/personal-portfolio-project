@@ -8,7 +8,6 @@
   --copper-rose: #9b6a6cff;
 }
 
-
 /* the main font-family and color of text on entire page*/
 * color {
   color: var(--charcoal);
@@ -80,14 +79,11 @@ img {
   object-fit: contain;
 }
 
-
-
 .bio {
   font-size: 20px;
   flex: 2;
   padding: 5px;
   text-align: justify;
-
 }
 
 #About-me,
@@ -145,7 +141,7 @@ li {
   width: 500px;
   height: 375px;
   margin: 20px;
-  border: solid var(--charcoal) 3px;*/
+  border: solid var(--charcoal) 3px;
 }
 
 .new-card {
@@ -173,14 +169,11 @@ li {
   align-items: center;
   justify-content: center;
   margin: 2rem;
-
 }
 
 .firstProject h3 p {
   text-align: center;
-  
 }
-
 
 /* the title "My Projects" above the gallery */
 #my-projects {
